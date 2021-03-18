@@ -143,9 +143,10 @@ class GraphPainter(
             }
             print(phi*180/Math.PI)
             println(" "+weight)
+            setXORMode(Color.WHITE)
 
-            drawString(weight.toString(),(x1+x2)/2-((x2-x1)/length).toInt(),(y1+y2)/2-100*((y2-y1)/length).toInt())
-
+            drawString(weight.toString(),(x1+x2)/2-((x2-x1)/length).toInt()-6,(y1+y2)/2-100*((y2-y1)/length).toInt()-2)
+            setPaintMode()
         }
     }
 }
