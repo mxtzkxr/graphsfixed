@@ -11,6 +11,7 @@ fun main() {
     with (MainWindow()){
         painter = p
         isVisible = true
+
     }
 
 }
